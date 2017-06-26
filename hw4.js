@@ -53,3 +53,31 @@
 // console.log (res);
 
 
+// //задача 5
+
+var arr =
+[{char:"a",index:12}, {char:"w",index:8}, {char:"Y",index:10}, {char:"p",index:3}, {char:"p",index:2}, 
+{char:"N",index:6}, {char:" ",index:5}, {char:"y",index:4}, {char:"r",index:13}, {char:"H",index:0}, 
+{char:"e",index:11}, {char:"a",index:1}, {char:" ",index:9}, {char:"!",index:14}, {char:"e",index:7}];
+
+// ==способ 1==
+// var sortByIndex = arr.sort((a, b) => a.index - b.index);
+// var newStr = arr.reduce ((prevVal, nextEl) => prevVal + nextEl.char, "")
+
+// console.log(newStr)
+
+//==способ 2===
+// var sortByIndex = arr.sort((a, b) => a.index - b.index);
+// var newStr = arr.reduce((previous, current) => previous + current.char, "")  ;
+// console.log(newStr)
+
+
+//==способ 3==
+
+var newStr = ' ';
+
+for (var i = 0; i < arr.length; i++) {
+	for (var j = 0; j < arr.length; j++)
+		if (arr[j].index == i) newStr += arr[j].char
+}
+console.log(newStr)
