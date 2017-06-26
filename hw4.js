@@ -64,12 +64,12 @@ var arr =
 // var sortByIndex = arr.sort((a, b) => a.index - b.index);
 // var newStr = arr.reduce ((prevVal, nextEl) => prevVal + nextEl.char, "")
 
-// console.log(newStr)
+// console.log(newStr);
 
 //==способ 2===
-// var sortByIndex = arr.sort((a, b) => a.index - b.index);
-// var newStr = arr.reduce((previous, current) => previous + current.char, "")  ;
-// console.log(newStr)
+//var newStr = arr.map((e)=>e.char).join("")
+//console.log(newStr);
+
 
 
 //==способ 3==
@@ -80,4 +80,4 @@ for (var i = 0; i < arr.length; i++) {
 	for (var j = 0; j < arr.length; j++)
 		if (arr[j].index == i) newStr += arr[j].char
 }
-console.log(newStr)
+console.log(newStr);
